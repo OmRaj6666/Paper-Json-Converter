@@ -1,0 +1,41 @@
+
+---
+
+# 🧩 `architecture.puml` (PlantUML)
+
+Save this file as **`architecture.puml`**
+
+```puml
+@startuml
+title Paper to JSON Converter - System Architecture
+
+actor User
+
+rectangle "Frontend (HTML/CSS/JS)" {
+  User --> UploadForm
+}
+
+rectangle "Backend (Flask API)" {
+  UploadForm --> API : POST /extract
+}
+
+rectangle "OCR Engine" {
+  API --> OCR : Extract Text
+}
+
+rectangle "Parser Module" {
+  OCR --> Parser : Raw Text
+}
+
+rectangle "JSON Generator" {
+  Parser --> JSON : Structured Data
+}
+
+rectangle "Output Storage" {
+  JSON --> File : result.json
+}
+
+JSON --> UploadForm : Response
+
+@enduml
+
