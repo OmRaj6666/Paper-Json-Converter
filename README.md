@@ -46,29 +46,15 @@ User → Frontend → Flask API → OCR Engine → Parser → JSON Output
 The following diagram illustrates the high-level architecture and data flow of the system.
 📌 System Architecture Screenshot
 
-📍 How to add this screenshot:
-Render architecture.puml using PlantUML
+<img width="411" height="883" alt="image" src="https://github.com/user-attachments/assets/5c884af6-82e8-4a9a-b19f-3b494c4c56e2" />
+
 
 
 📂 Project Structure
-PAPER-TO-JSON/
-│
-├── backend/
-│   ├── app.py
-│   ├── ocr.py
-│   ├── parser.py
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── index.html
-│   ├── script.js
-│   └── style.css
-│
-├── output/
-│   └── result.json
-│
-└── docs/
-    └── architecture.png
+
+<img width="206" height="325" alt="Screenshot 2025-12-29 at 10 57 44 PM" src="https://github.com/user-attachments/assets/f81e36dd-d55f-4370-92f1-bf61dc074c8e" />
+
+
 
 🔁 Data Flow
 User uploads scanned document
